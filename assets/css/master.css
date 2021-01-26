@@ -30,15 +30,23 @@ nav{
   width: 100%;
   height: 100vh;
   position: relative;
-  }
-#row_1{
+}
+.bg_red{
   background-color: red;
+  height: 100%;
 }
-#row_2{
+.bg_green{
   background-color: green;
+  height: 100%;
 }
-#row_3{
+.bg_yellow{
   background-color: yellow;
+  height: 100%;
+}
+[class^="col_"]:after{
+  clear:both;
+  content: "";
+  display: table;
 }
 /* parte dedicata al layout */
 
@@ -46,7 +54,7 @@ nav{
 main > section > img{
   height: 60%;
 }
-.shoes{
+.shoes_img{
   position: absolute;
   top: 40%;
   left: 50%;
@@ -55,7 +63,7 @@ main > section > img{
 /* parte dedicata al posizionamento delle singole immagini */
 
 /* parte dedicata al posizionamento dei testi */
-.shoes_t{
+.shoes_t_pos{
   text-align: center;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -64,13 +72,13 @@ main > section > img{
   font-size: 100px;
   font-weight: bold;
 }
-.shoes_t_1{
+.shoes_t_color_1{
   color: yellow;
 }
-.shoes_t_2{
+.shoes_t_color_2{
   color: yellow;
 }
-.shoes_t_3{
+.shoes_t_color_3{
   color: green;
 }
 /* parte dedicata al posizionamento dei testi */
