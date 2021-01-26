@@ -4,7 +4,7 @@
   padding: 0px;
   border: 0px;
 }
-
+/* parte relativa al header */
 header{
   position: relative;
   z-index: 1;
@@ -20,9 +20,8 @@ nav{
   padding: 10px 15px;
   margin: 20px 30px 0 0;
 }
-main > section > img{
-  height: 50%;
-}
+/* parte relativa al header */
+
 /* parte dedicata al layout */
 [class^="row_"]{
   float: left;
@@ -40,23 +39,33 @@ main > section > img{
   background-color: yellow;
 }
 /* parte dedicata al layout */
+
 /* parte dedicata al posizionamento delle singole immagini */
-.shoes_1{
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+main > section > img{
+  height: 60%;
 }
-.shoes_2{
+.shoes{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.shoes_3{
-  position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 /* parte dedicata al posizionamento delle singole immagini */
+
+/* parte dedicata al posizionamento dei testi */
+.shoes_t{
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: 0%;
+  left: 50%;
+  font-size: 100px;
+  }
+.shoes_t_1{
+  color: yellow;
+}.shoes_t_2{
+  color: yellow;
+}.shoes_t_3{
+  color: green;
+}
+/* parte dedicata al posizionamento dei testi */
